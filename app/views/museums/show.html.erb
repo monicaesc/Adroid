@@ -1,0 +1,18 @@
+<p>
+  <strong>Name:</strong>
+  <%= @museum.name %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @museum.location %>
+</p>
+
+
+
+<%= link_to "Delete", museum_path(@museum),
+              method: :delete,
+              data: {confirm: "Are you sure"}%>
+
+<%= link_to 'Edit', edit_museum_path(@museum) %> |
+<%= link_to 'Back', museum_path %>

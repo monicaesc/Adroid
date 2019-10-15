@@ -1,0 +1,13 @@
+<%= form_for @exhibition do |f| %>
+    <p>
+        <%= f.label "Museum" %> <br/>
+        <%= f.text_field :museum_id %>
+    </p>
+    <p>
+        <%= f.label "Artist ID" %> <br/>
+        <%= f.text_area :artist_id %>
+    </p>
+    <p>
+        <%= f.submit %>
+    </p>
+<% end %>

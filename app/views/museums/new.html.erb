@@ -1,0 +1,11 @@
+<h1>Museum</h1>
+
+<%= form_for @museums do |museum|%>
+<label> Ingrese el nombre de el museo </label>
+<%= museum.text_field :name %>
+<label> Ingrese la location de el museo </label>
+<%= museum.text_field :location %>
+<%= museum.submit "Create_Museum" %>
+<%end%>
+
+<%= link_to 'Back', museums_path %>
